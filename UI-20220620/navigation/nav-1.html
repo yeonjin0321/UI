@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>목록태그 활용예제</title>
+  <script src="https://kit.fontawesome.com/2670c8696d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./nav-style.css">
+</head>
+
+<body>
+<header>
+<h1>Java Camp</h1>
+<ul class = "gnb"> <!-- 위에 뜨는 메인 메뉴들 -->
+  <li><a href="#">Java</a></li>
+  <li><a href="#">ORACLE</a></li>
+  <li><a href="#">HTML5</a></li>
+  <li><a href="#">JAVASCRIPT</a></li>
+  <li><a href="#">NODEJS</a></li>
+  <li><a href="#">REACT</a></li>
+</ul>
+
+<ul class ="lnb"> <!-- ui이모지 사용 -->
+  <li><a href="#"><i class = "far fa-envelope"></i></a></li>
+  <li><a href="#"><i class = "far fa-facebook-square"></i></a></li>
+</ul> 
+<a href="" class="btnMenu">
+  <i class="fas fa-bars"></i><!-- 밑으로 떨어지는 바 생성 -->
+</a>
+</header>
+<main class="camp-bg">
+  <div class="video-wrap"></div>
+  <video src="./forest.mp4" muted autoplay loop></video>
+</main>
+</body>
+</html>
+
+
+<!-- 
+  Global Navvigation Bar : 전체페이지를 구성하는 메뉴 - gnb
+  Local Navigation Bar : 로컬페이지를 구성하는 메뉴 -Lnb
+ -->

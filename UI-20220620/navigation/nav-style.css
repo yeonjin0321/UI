@@ -1,0 +1,101 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Roboto+Mono:ital@1&display=swap');
+
+
+*{
+box-sizing : border-box;
+/* border: 1px solid red; */ 
+}
+
+ul{
+  list-style: none; /* 구슬 사라지게하기 */
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background-color: black;
+}
+
+header{
+  width: 100%;
+  border-bottom: 1px solid #aaaaaa;
+  display: flex;
+  justify-content: space-between;/* 양 끝에 균등하게 배치 */
+  top: 0px;
+  left: 0px;
+  align-items: center;
+  position: absolute;
+  z-index: 2; 
+}/* 밑에 구분선 그리기, flex 옆으로 쌓기 */
+
+header h1{
+  font: bold 54px;
+  color: white;
+}
+
+header .gnb{
+  display: flex;/* 안쪽에 있는 li들이 좌우 배치됨 */
+}
+
+header .gnb li {
+  margin: 0px  20px; /* 양 옆이 20px / 40px */
+/* 6. 위아래 0px 양옆에 20px */
+}
+
+header  .gnb li a {
+  color: white;
+  letter-spacing: 2px; /* 글자간격 */
+}
+header .lnb{
+  display: flex; 
+}
+header .lnb li{
+  margin: 0px 10px; 
+}
+
+header .lnb a {
+  font-size: 16px;
+  color: white;
+}
+
+header .btnMenu{
+  font-size: 24px;
+color: white;
+display: none;
+}
+.camp-bg{
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.video-wrap{
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+.video-wrap video{
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+}
+
+/* 반응형 웹 처리 */
+@media screen and (max-width: 1024px){
+  header .gnb{
+    display: none;
+  }
+  header .lnb{
+    display:none;
+  }
+  header .btnMenu{
+    display: block;
+  }
+}
