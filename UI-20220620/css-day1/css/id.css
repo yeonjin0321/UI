@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+/*
+클래스는 동일한 이름이 여러개가 올 수 있다.
+id는 한 페이지 내에서 오직 하나만 올 수 있다. 
+ */
+
+/* p{
+  border: 3px solid cyan;
+}
+ */
+p#blue{
+  border: 1px blue;
+}
+
+p#red{
+  border: 1px red;
+}

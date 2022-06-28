@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+div{
+  border:  1px solid red;
+}
+/* 문제: 링크에만 테두리 파랑색으로 */
+/* div 태그 안에 자손태그 안에도 다 반영이 되기 때문이다. */
+
+div a {
+  border: 3px solid yellowgreen;
+}
+
+/* div의 직계 자손만 처리할 때  */
+div > a {
+  border: 3px solid blue;
+}
