@@ -1,11 +1,8 @@
 
-
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Roboto+Mono:ital@1&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 *{
 box-sizing : border-box;
-/* border: 1px solid red; */ 
+border: 1px solid red;  
 }
 
 ul{
@@ -33,7 +30,7 @@ header{
 }/* 밑에 구분선 그리기, flex 옆으로 쌓기 */
 
 header h1{
-  font: bold 54px;
+  font: bold 24px/1 "Architects Daughter";
   color: white;
 }
 
@@ -46,10 +43,17 @@ header .gnb li {
 /* 6. 위아래 0px 양옆에 20px */
 }
 
-header  .gnb li a {
+header .gnb li a {
+  font: bold 16px/1 "Architects Daughter";
   color: white;
   letter-spacing: 2px; /* 글자간격 */
 }
+
+header .gnb li.on a{
+  background-color: green;
+  color: white;
+}
+
 header .lnb{
   display: flex; 
 }
@@ -57,7 +61,7 @@ header .lnb li{
   margin: 0px 10px; 
 }
 
-header .lnb a {
+header .lnb li a {
   font-size: 16px;
   color: white;
 }
@@ -89,13 +93,13 @@ display: none;
 
 /* 반응형 웹 처리 */
 @media screen and (max-width: 1024px){
-  header .gnb{
-    display: none;
-  }
-  header .lnb{
+  header .gnb {
     display:none;
   }
-  header .btnMenu{
+  header .lnb {
+    display: none;
+  }
+  header .btnMenu {
     display: block;
   }
 }
