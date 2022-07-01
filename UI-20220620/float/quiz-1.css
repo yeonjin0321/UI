@@ -1,0 +1,23 @@
+.flex-container{
+  display: flex;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin:5px;
+  background-color:SEASHELL;
+}
+
+.flex-container.flex-end{justify-content:flex-end;}
+
+.flex-item{
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  color: black;
+  font-size: 36px;
+  text-align:inherit;
+}
+
+.color-blue{
+  background-color: blue;
+}
