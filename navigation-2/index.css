@@ -1,72 +1,111 @@
+* {
+  box-sizing: border-box;
+ /*  border: 1px solid red; */
+}
 
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
-*{
-box-sizing : border-box;
-border: 1px solid red;  
-}/* 구분선 */
-
-
-a{
+a {
   text-decoration: none;
 }
 
-body{
+body {
   background-color: black;
 }
 
-header{
-top:  0;
-left: 0;
-width: 100%;
-padding: 20px 0px; /* 기준점, 양옆 */
-position: absolute; /* 앱솔루트로 먹여야 z-index가 먹음(가중치 비디오1 헤더3) */
-z-index: 3; /* 순위를 3순위로 지정함 */
+.container{
+  width: 100%;
+  max-width: 1480px;
+  padding: 0 20px;
+  margin: auto;
 }
 
-header h1{
-margin: 0px;
-height: 40px;
-float: left;
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0px;
+  position: absolute;
+  z-index: 3;
 }
 
-header h1 img{
-background-color: white;
-
+header h1 {
+  margin: 0px;
+  height: 40px;
+  float: left;
 }
 
-.main-navigation{
+header h1 img {
+  background-color: white;
+}
+
+.main-navigation {
   float: right;
 }
-
-
-.main-navigation a{
+.main-navigation a {
   color: white;
-margin-left: 20px;
+  margin-left: 20px;
 }
-.btn{
-  display:  inline-block;
+
+
+.btn {
+  display: inline-block;
   color: white;
   font-weight: bold;
-  padding: 12px 20px ;
+  padding: 12px 20px;
   border-radius: 8px;
   background-color: blue;
 }
 
+.ghost-btn{
+  background-color: transparent;
+  border: 1px solid blue;
+}
 
-.text-wrap{
+.text-wrap {
+  width: 520px;
+  height: 100vh;
+  padding:240px 20px ;
+  left: 0px;
+  top: 0px;
   position: absolute;
   z-index: 2;
 }
 
-.video-wrap{
+.text-wrap h2{
+  color: white;
+  font-size: 64px;
+  line-height: 1.25;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+.text-wrap h3{
+  color: white;
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+.text-wrap p{
+  color: white;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100vh;
+}
+
+.video-wrap {
   position: absolute;
   left: 0px;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
   z-index: 1;
 }
 
-.video-wrap video{
+.video-wrap video {
   display: block;
   width: 100%;
   height: 100%;
@@ -74,4 +113,6 @@ margin-left: 20px;
 }
 
 /* 반응형 웹 처리 */
-@media screen and (max-width: 1024px){}
+@media screen and (max-width: 1024px) {
+
+}
