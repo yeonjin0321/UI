@@ -1,0 +1,89 @@
+*{
+  border: 1px solid red
+} /* 레이아웃 골격 */
+
+.center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+transform: translate(-50%,-50%);/* 위치 이동 */
+  
+}
+
+.card{
+  padding: 20px; /* 카드 div 감싸는 위아래 양옆 20 */
+  color: #222;
+  width: 280px;
+  border-radius: 8px;
+  margin: 30px;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h1{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.card-info {
+  display: flex;
+
+  justify-content: space-between;/* 가운데만 벌림 */
+}
+
+.user-wrap{
+  display: flex;
+  align-items: center;
+}
+
+.user-wrap img {
+  position: relative;
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 32px;
+  float:left;
+}
+
+.user-name{
+  font-size: 14px;
+}
+
+.icons{
+  margin-top: 4px;
+}
+
+.chat, 
+.favorite{
+display: inline-block; /* 댓 좋아요 펼치기 */ 
+}
+
+.chat{
+  margin-right: 20px;
+}
+
+.icon{
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+
+}
+
+.chat span,
+.favorite span {
+  font-size: 12px;
+  line-height: 16px;
+  display: block;
+  float: left;
+}

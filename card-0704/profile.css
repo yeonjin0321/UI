@@ -1,0 +1,95 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  /* 패딩값이 너비 값에 포함되어 있게 됨 */
+  box-sizing:border-box;
+  /*  border: 1px solid palevioletred;*/
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+.wrap{
+  width: 340px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  /* 자기 자신의 크기만큼 이용시킴 */
+  transform: translate(-50%, -50%);
+}
+.wrap .profile {
+  width: 100%;
+  text-align: center;
+}
+.wrap .profile img {
+  width:200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20%;
+}
+
+.wrap .profile h1 {
+  font:bold 22px/1 "arial";
+  color : gray;
+  margin-bottom: 5px;
+}
+.wrap .profile p {
+  font:bold 12px/1 "arial";
+  color : rgb(41, 37, 37);
+  margin-bottom: 30px;
+}
+
+.wrap .profile .btnView{
+display: block;
+width: 180px;
+height: 32px;
+font: bold 12px/32px "arial"; 
+margin: 0px auto 20px;
+color:white;
+text-shadow: 0px 0px 5px rgba(255,255,255,0.6);
+background-color: aqua;
+border-radius: 16px;
+}
+
+.wrap .contact {
+  margin-bottom: 25px;
+}
+
+.wrap .contact li {
+  width: 100%;
+  padding: 10px 0px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.wrap .contact li:last-child {
+  border-bottom:  none;
+}
+
+.wrap .contact li i {
+  width: 20%;
+  text-align: center;
+  color: grey;
+  font-size: 14px;
+}
+
+.wrap .contact li span {
+  font : 11px/1 "orbitron";
+  color : #555555;
+  letter-spacing: 1px; /* 글자간 간격 */
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
