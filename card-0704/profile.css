@@ -36,7 +36,8 @@ body {
   width:200px;
   height: auto;
   border-radius: 50%;
-  margin-bottom: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .wrap .profile h1 {
@@ -58,7 +59,7 @@ font: bold 12px/32px "arial";
 margin: 0px auto 20px;
 color:white;
 text-shadow: 0px 0px 5px rgba(255,255,255,0.6);
-background-color: aqua;
+background-color: rgb(161, 243, 243);
 border-radius: 16px;
 }
 
@@ -79,7 +80,7 @@ border-radius: 16px;
 .wrap .contact li i {
   width: 20%;
   text-align: center;
-  color: grey;
+  color: rgb(48, 40, 40);
   font-size: 14px;
 }
 
@@ -88,6 +89,45 @@ border-radius: 16px;
   color : #555555;
   letter-spacing: 1px; /* 글자간 간격 */
 }
+
+.wrap .others {
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0.4;
+}
+
+.wrap .others a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0px 10px;
+  opacity: 0.4;
+
+}
+
+.wrap .others a.on {
+  opacity: 1;
+}
+
+.wrap .others a:nth-of-type(1){
+  background-color: aquamarine;
+}
+
+.wrap .others a:nth-of-type(2){
+  background-color: green
+}
+
+.wrap .others a:nth-of-type(3){
+  background-color: hotpink;
+}
+
+.wrap .others a:nth-of-type(4){
+  background-color: purple
+}
+
+
 
 .menu {
   display: flex;
