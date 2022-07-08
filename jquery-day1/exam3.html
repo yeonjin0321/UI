@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXAM3</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+
+<!-- body 안의 스크립트 시작 -->
+  <script>
+
+    $(document).ready(function() {
+      let array = [
+      {name : 'SM', link: 'https://www.smtown.com/'}
+     , {name : 'Google', link: 'https://www.google.co.kr/'}
+     , {name : 'Naver', link: 'https://www.naver.com/'}
+    ];
+
+$.each(array, function(index, item){
+  let output = '';
+  output += '<a href="'+item.link+'">';
+  output += '<h2>'+item.link+'</h2>';
+  output += '</a>';
+  //<a href="'+item.link<h1>'+item.link+'</h1></a>
+document.body.innerHTML += output;
+});
+    });
+
+  </script>
+<!-- 
+        1. html
+        2. html + javascript
+        3. javascript -> jEasyUI와 같은 js 기반 UI 솔루션
+     -->
+</body>
+</html>

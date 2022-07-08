@@ -1,5 +1,6 @@
+
+
 function handleEnter(){
-  alert(event.keyCode)
   if(event.keyCode === 13){//키를 눌렀을 때 - 13번이면 Enter코드값
       console.log('엔터 쳤을 때');
       searchList(); //서치리스트 함수 호출
