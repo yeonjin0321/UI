@@ -9,16 +9,22 @@
   <script src="../../js/jquery.easyui.min.js"></script>
   <link rel="stylesheet" href="../../themes/default/easyui.css">  
   <link rel="stylesheet" href="../../themes/icon.css">  
+
   <script>
+    //속성1 조회버튼 눌렀을 시에 회원 정보 나오게 하는 함수
     function addressList(){
       $('#dg_address').datagrid({
-        url:'http://127.0.0.1:55432/UI-20220620/jEasyUI/addressBook/address.json',        
+      /*   url:'http://127.0.0.1:55432/UI-20220620/jEasyUI/addressBook/address.json',    */
+        url:'http://127.0.0.1:63728/UI-20220620/jEasyUI/addressBook/address.json'  ,   
       });
     }
+    //속성2 인서트 버튼을 눌렀을때 open이라는 모달창이 나오게 하는 함수
     function addressInsert(){
       $('#dia_insert').dialog('open');
     }
   </script>
+
+
 </head>
 <body>
   <table id="dg_address" class="easyui-datagrid"></table>
@@ -44,7 +50,7 @@
 
     });
   </script>
-<!-- ========================  ========================= -->
+<!-- ======================== 입력 눌렀을때 모달창 ========================= -->
 <div id="dia_insert" class="easyui-dialog" title="My Dialog" style="width:400px;height:200px;"
 data-options="iconCls:'icon-save', resizable:true, modal:true, closed:true">
 Dialog Content.

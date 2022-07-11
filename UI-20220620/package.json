@@ -1,0 +1,28 @@
+{
+  "name": "ui",
+  "description": "HTML5, CSS, Javascript, NodeJS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeonjin0321/UI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "bugs": {
+    "url": "https://github.com/yeonjin0321/UI/issues"
+  },
+  "homepage": "https://github.com/yeonjin0321/UI#readme"
+}
