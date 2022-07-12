@@ -11,17 +11,16 @@ function handleEnter(){
 function searchList(){
   const query = document.querySelector('.input').value;
   console.log('사용자가 입력한 검색어 : ' + query);
-  var requestOptions ={ method: 'GET',redirect: 'follow'};
+  let requestOptions ={ method: 'GET',redirect: 'follow'};
 
   /* 패치함수 이용하기 쿼리 백틱 */
  /*검색어로 가장 많이 본 영상 25개   */
+ /* 이부분 이해하기!! */
   fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${query}&key=AIzaSyCABboURqwUzJulbAVvFsgjjMHb_fkCaHM&type=video`)
     .then(response => response.json())
-    //.then(result => console.log(result.items)) // 어레이가 될것. 포문 돌려서 처리
     .then(result => {
       const items = result.items; 
       const videoList=[];
-
 
       videoList.push(`<ul class='videos'>`);
       /* for문돌리기 */

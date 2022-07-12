@@ -1,0 +1,61 @@
+npm init -y -> package.json파일 생성
+
+npm i express -- save
+--save옵션을 통해서 설치된 Node모듈은 package.json 파일내의 
+dependencies목록에 추가 된다.
+
+코드가 수정될 때 마다 다시 실행이 된다.
+npm i --save-dev nodemon
+
+package.json에 아래 내용을 추가하고 실행할 땐 npm run server 엔터침.
+
+미들웨어 정의
+익스프레스가 실행(node render or node render.js or nodemon render or nodemon render.js)
+되면서 어떤 하나의 request(post방식 req.body json응답,정보 읽기, 사용자가 입력한 값을 요청)가 들어 왔을 때.
+그 request가 응답이 되어 나갈때(화면 출력)때 까지 거치는 모든 함수들을 말함.
+여러 함수들을 거치는 구조를 갖음
+그 함수 하나하나가 미들웨어임.
+
+익스프레스 f/w을 활용하면 서버사이드 랜더링과 클라이언트 사이드 랜더링이 가능함.
+restful api - get/post 방식
+
+javascript - single thread
+nodejs -> multi thread
+
+웹서비스에 대한 url패턴 - 터짐(gym) 프로젝트.
+응답이 완료됨 -> 오라클 서버 경유, naver서버 경유, 해커뉴스 서버 겅유, 유투브 api 서버 경유 -> 데이터를 받아올 수 있음.
+요청하기 위해서 get(param1 , param2)
+http://localhost:3002
+http://localhost:3002/tomato
+http://localhost:3002/tomato/123
+http://localhost:3002/login?mem_id=apple&mem_pw=123
+url정보를 가지고 요청하는 건 싹 다 get(디폴트)방식이다. - 단위테스트가 가능하다.
+ui솔루션들은 default가 post방식 - 단위테스트 불가함.
+
+<form id "" action "./login?" method="get">
+</form>
+
+get 방식 -1개 app.get("/",(req,res)) => {실행문 [if(선택), for, switch] - callback}
+post 방식 -1개
+select
+insert
+update
+delete
+
+res.setContentType("text/html") 응답
+res.setContentType("application/json")
+res.join(); 이름도 더블쿼테이션으로 쓴다.
+[]-배열
+{}-객체
+[{},{},{},...]
+
+웹서비스를 위해서는 요청객체와 응답객체가 반드시 필요하다.
+내가 인스턴스화 한다. 아니다 시스템에서 제공해준다. - 의존성 주입. dependency injection
+
+express.js에서 주입해줌.
+요청객체와 응답객체 주입해줌.
+서버사이드랜더링
+클라이언트 사이드 랜더링
+풀스텍 개발자
+프론트개발자 -> 풀스텍 개발자
+코딩을 즐기는 사람.
