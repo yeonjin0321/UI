@@ -22,7 +22,7 @@ fetch(NEWS_URL, requestOptions)
     console.log(result);
     const ul = document.createElement("ul");
     //for문 돌림
-    for(let i =0; i<10; i++){
+    for(let i =0; i<30; i++){
       const div = document.createElement("div");
       div.innerHTML = `
       <li>
@@ -76,6 +76,7 @@ fetch(NEWS_URL, requestOptions)
 */
 
   function router() {
+  //  console.log(location.hash); #3214567
     const hashValue = location.hash;
     //첫 진입이면
     if(hashValue === ""){
