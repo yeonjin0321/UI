@@ -10,8 +10,9 @@ const content = document.createElement('div');
 const requestOptions = {
   method: 'GET',
   redirect: 'follow'
-};
+}; // 상수로 미리 적어두는것.
 
+//함수1 뉴스 리스트 보여주기
 function getNewsList(){
   console.log('getNewsList 호출 성공');
   fetch(NEWS_URL, requestOptions)

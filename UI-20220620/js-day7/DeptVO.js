@@ -32,5 +32,4 @@ set setLoc(value){
 const dvo = new DeptVO(10,'총무부','서울');
 console.log(dvo.deptno);
 dvo.setDeptno =20;
-dvo.setDeptno =30;
 console.log(dvo.getDeptno);
